@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Modern Jukebox</title>
+    </head>
+    
+    <body>
+        <h1 class="center"> Modern JukeBox</h1>
+        <br>
+        <div class="center" id= "ipod">
+            <img class="center" src="ipod.png">
+            
+            <div id= "screen" class="center">
+                <div id= "AllGenre">
+                    <div class="genre" id="Rap" onclick="chooseSong(this)">
+                        <p class="playlistText">Rap</p>
+                    </div>
+
+                    <div class="genre" id="Country" onclick="chooseSong(this)">
+                        <p class="playlistText">Country</p>
+                    </div>
+
+                    <div class="genre" id="Pop" onclick="chooseSong(this)">
+                        <p class="playlistText">Pop</p>
+                    </div>
+
+                    <div class="genre" id="Classical" onclick="chooseSong(this)">
+                        <p class="playlistText">Classical</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="InvisibleTouchpad" class="center">
+                <div class="invisibleBtns" id="PlayPause" onclick="toggle()">
+<!--                    PlayPause-->
+                </div>
+                
+                <div class="invisibleBtns" id="Next" onclick="next()">
+<!--                    Next-->
+                </div>
+                    
+                <div class="invisibleBtns" id="Previous" onclick="previous()">
+<!--                    Previous-->
+                </div>
+                
+                <div class="invisibleBtns" id="Shuffle" onclick="shuffle()">
+<!--                    Shuffle-->
+                </div>
+                
+                <div class="invisibleBtns" id="Menu" onclick="homeScreen()">
+<!--                    Menu-->
+                </div>
+            </div>
+            
+            <audio id="currentSong">
+                <source id="source" src="" type="audio/mpeg" datavalue="x">
+            </audio>
+        
+        </div>
+        
+        <script src="main.js"></script>
+        <footer class="center">&copy; Kadeem, Yorranshell, Safa</footer>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 50px;
+}
+
+footer{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+body{
+}
+
+#ipod {
+    text-align: center;
+    width: 450px;
+    height: 750px;
+}
+
+/*CSS for the screen elements*/
+#screen {
+    text-align: center;
+    width: 360px;
+    height: 270px;
+    border-radius: 1%;
+    border: 2px solid black; /* 1px solid black*/
+    position:relative;
+    top: -690px;
+    margin-left: 10%;
+    background-color: black;
+}
+
+#AllGenre {
+    width: 360px;
+    height: 270px;
+    position: relative;
+}
+
+.genre {
+    height: 40px;
+    border-bottom: 1px solid teal;
+    padding-left: 5%;
+    padding-top: 2%;
+    
+    
+}
+.genre:hover {
+    background-color: mediumaquamarine;
+    text-decoration-color: darkblue;
+    color: white;
+}
+
+.playlistText {
+    font-size: 13pt;
+    text-align: left;
+    position: relative;
+    top: -10px;
+    color:aquamarine;
+}
+
+/*CSS for the touchpad elements*/
+#InvisibleTouchpad{
+    width: 430px;
+    height: 280px;
+    position: relative;
+    top: -640px;
+/*    border: 10px solid red;*/
+}
+
+.invisibleBtns {
+    width: 20%;
+    height: 70px;    
+}
+
+
+#PlayPause{
+    position:absolute;
+    top: 205px;
+    margin-left: 40%;
+}
+
+
+#Next{
+    position:absolute;
+    top: 115px;
+    margin-left: 64%;
+} 
+
+#Previous{
+    position:absolute;
+    top: 115px;
+    margin-left: 22%;
+} 
+
+#Shuffle{
+    position:absolute;
+    top: 120px;
+    margin-left: 43%;
+}
+
+#Menu{
+    position:absolute;
+    top: 25px;
+    margin-left: 43%;
+}
+
+#table
+{
+   color:aquamarine;
+}
+#NowPlaying{
+   color: aquamarine;
+}
