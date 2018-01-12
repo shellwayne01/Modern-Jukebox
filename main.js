@@ -31,8 +31,8 @@ var p1 = new Song('Work','Rhianna','2:56','Work');
 var p2 = new Song('Slide','This Guy','2:56','Slide');
 var p3 = new Song('Die Young','Ke$ha','3:32','Dieyoung');
 
-var cl1 = new Song('Canon','Mozart','2:56','Canon');
-var cl2 = new Song('Allegro','Betoven','5:00','Allegro');
+var cl1 = new Song('Canon','Beethoven','2:56','Canon');
+var cl2 = new Song('Allegro','Mozart','5:00','Allegro');
 var cl3 = new Song('Bumblebee','A Guy','12:00','Bumblebee');
 var cl4 = new Song('Mans Not Hot','Big Shack','2:36','MansNotHot');
 
