@@ -10,6 +10,8 @@ var playing = false;
 // var playlists = [rap,country,pop,classic]; //contains all the playlists we will have
 var playlistindex;
 var index; //this is so that other functions can mess with the index of list
+var AlbumArt;
+
 
 function Song(name,artist,time,file){
 	this.name = name;
@@ -31,8 +33,8 @@ var p1 = new Song('Work','Rhianna','2:56','Work');
 var p2 = new Song('Slide','This Guy','2:56','Slide');
 var p3 = new Song('Die Young','Ke$ha','3:32','Dieyoung');
 
-var cl1 = new Song('Canon','Beethoven','2:56','Canon');
-var cl2 = new Song('Allegro','Mozart','5:00','Allegro');
+var cl1 = new Song('Canon','Mozart','2:56','Canon');
+var cl2 = new Song('Allegro','Betoven','5:00','Allegro');
 var cl3 = new Song('Bumblebee','A Guy','12:00','Bumblebee');
 var cl4 = new Song('Mans Not Hot','Big Shack','2:36','MansNotHot');
 
@@ -78,11 +80,16 @@ function playsong(){
     	datavalue = song;
     	x.load();
     }
+    
+    AlbumArt = 'AlbumArt/'+ datavalue +'.jpg>';
+    console.log(AlbumArt);
+    
     playing = true;
     var np = document.getElementById('NowPlaying');
-    np.innerHTML = '<p>Now Playing: '+song;
+    np.innerHTML = '<p>Now Playing: '+song+ '</p> <div class="albumFrame"><img class="albumImg" src = '+AlbumArt+'</div>';
     x.play();
 }
+
 function pause(){
 	playing =  false;
     x.pause();
