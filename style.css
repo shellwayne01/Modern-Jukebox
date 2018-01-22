@@ -117,6 +117,20 @@ body{
 {
    color:aquamarine;
 }
+
 #NowPlaying{
    color: aquamarine;
 }
+
+.albumFrame {
+    box-sizing: border-box;
+    height: 70px;
+    width: 75px;
+    margin: 0 auto;
+}
+
+.albumImg {
+    height:100%;
+    width:100%;
+}
+
